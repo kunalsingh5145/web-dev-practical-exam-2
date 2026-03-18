@@ -1,0 +1,126 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #a8d8e6, #cdeff6);
+    min-height: 100vh;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 25px;
+    color: #0b3c49;
+}
+
+/* Main Container */
+.mainBox {
+    display: flex;
+    justify-content: center;
+}
+
+.container1 {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Boxes */
+.searchBox,
+.weatherBox {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 15px;
+    width: 320px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h3 {
+    margin-bottom: 15px;
+    color: #0b3c49;
+}
+
+/* Input row */
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+/* Input */
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Button */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #58c6d4;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3aa9b8;
+}
+
+/* Search history buttons */
+.searchedCities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.searchedCities button {
+    background: #d6f3f7;
+    color: #0b3c49;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Weather rows */
+.weather-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    border-left: 4px solid rgba(0, 150, 180, 0.5);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+}
+
+/* Labels */
+.label {
+    color: #2f7f8f;
+    font-size: 0.9rem;
+}
+
+/* Values */
+.value {
+    color: #0b3c49;
+    font-weight: bold;
+}
+
+/* Loading / error text */
+#fetchData {
+    margin-top: 10px;
+    font-size: 14px;
+}
